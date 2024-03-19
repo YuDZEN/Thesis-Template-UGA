@@ -1,4 +1,4 @@
-# UGA Stage Report Template
+# Université Grenoble Alpes Stage Report Template
 
 This is a modified version of the USFD Academic Report Template originally created by Prof. Roger K. Moore from the University of Sheffield. 
 It was subsequently adapted by Loïc Barrault on September 16, 2021.
