@@ -1,0 +1,56 @@
+\glsdefs@newdocentry{latex}%
+{%
+name={LaTeX},%
+sort={LaTeX},%
+type={main},%
+first={LaTeX},%
+firstplural={LaTeXs},%
+text={LaTeX},%
+plural={LaTeXs},%
+description={A document preparation system},%
+descriptionplural={A document preparation system},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
+\glsdefs@newdocentry{glossaries}%
+{%
+name={Glossaries},%
+sort={Glossaries},%
+type={main},%
+first={Glossaries},%
+firstplural={Glossariess},%
+text={Glossaries},%
+plural={Glossariess},%
+description={A LaTeX package for creating glossaries},%
+descriptionplural={A LaTeX package for creating glossaries},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+
