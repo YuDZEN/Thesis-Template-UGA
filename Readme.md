@@ -19,5 +19,5 @@ This version is modified on March 19, 2024 based on the version of Loïc Barraul
 
 ```Bash
 zsh ./run.sh
-./
+./run.sh
 ```
