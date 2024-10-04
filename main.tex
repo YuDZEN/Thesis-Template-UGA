@@ -6,7 +6,7 @@
 % Adapted by Loïc Barrault
 % 16 September 2021
 % Adapted by Yu Chen
-% 19/03/2024
+% 10/05/2024
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%ATTETION%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%use XeLatex as complile engine
@@ -14,30 +14,48 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[12pt,oneside,french]{book}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{xeCJK}
+%Windows系统用这个
+\setCJKmainfont{SimSun}
+%苹果系统用这个
+%\setCJKmainfont{Songti TC}
+\usepackage{tikz}
+\usepackage{url}  % 让 URL 或 DOI 自动换行
+\usepackage{tipa}
+\usepackage{alltt}
 \usepackage[margin=1.2in]{geometry}
 \usepackage[toc,page]{appendix}
 \usepackage{graphicx}
-\usepackage{natbib}
+\usepackage[style=apa]{biblatex}
 \usepackage{lipsum}
+\usepackage{tabularx}  
+\usepackage{svg}
 \usepackage{hyperref}
-\usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage[french]{babel}
+\usepackage{float}
 \usepackage{caption}
 \usepackage[toc,xindy]{glossaries}
 \usepackage[automake]{glossaries-extra}
+\usepackage{listings}
+
 \usepackage{fontspec}
 \setmainfont{Times New Roman}
 \usepackage{setspace}
 \onehalfspacing
 \input{sections/glossary.tex}
 \makeglossaries
+\addbibresource{main.bib}
+
 
 \begin{document}
+	\pagestyle{plain}
 
-\captionsetup[figure]{margin=1.5cm,font=small,labelfont={bf},name={Figure},labelsep=colon,textfont={it}}
-\captionsetup[table]{margin=1.5cm,font=small,labelfont={bf},name={Tableau},labelsep=colon,textfont={it}}
-\SetLipsumDefault{1}
+	\captionsetup[figure]{margin=1.5cm,font=small,labelfont={bf},name={Figure},labelsep=colon,textfont={it}}
+	\captionsetup[table]{margin=1.5cm,font=small,labelfont={bf},name={Tableau},labelsep=colon,textfont={it}}
+	\SetLipsumDefault{1}
 
 \frontmatter
 
@@ -57,7 +75,7 @@
 {\large  \emph{Laboratoire :} YOUR LABORATOIRE}\\[1cm]  
 {\large
 UFR SHS\\
-Départment Mathématiques et informatique appliquées aux sciences humaines et sociales\\
+Départment Mathématiques et informatique appliquées aux sciences humaines et sociales\\% change as necessary
 \today}
 \end{center}
 \end{titlepage}
@@ -68,19 +86,10 @@ Départment Mathématiques et informatique appliquées aux sciences humaines et 
 % -------------------------------------------------------------------
 
 \newpage
-\section*{\Large Déclaration}
-
-Toutes les phrases et passages cités dans ce document provenant de travaux d'autres personnes ont été spécifiquement identifiés par une citation claire à l'auteur, le travail et la ou les pages correspondantes.
-Toutes les illustrations qui ne sont pas le travail de l'auteur de ce rapport sont utilisées avec l'accord de leur auteur et sont également clairement référencées. Je comprends que faillir à cela équivaut à du plagiat et sera considéré en tant que tel lors de l'évaluation.\\[1cm]
-
-\noindent Prénom NOM: \\[1mm]
-\rule[1em]{25em}{0.5pt}
-
-\noindent Signature:\\[1mm]
-\rule[1em]{25em}{0.5pt}
-
-\noindent Date: \today \\[1mm]
-\rule[1em]{25em}{0.5pt}
+\input{sections/declaration.tex}
+% -------------------------------------------------------------------
+	% Abstract
+	% -------------------------------------------------------------------
 
 
 % -------------------------------------------------------------------
@@ -105,30 +114,27 @@ Toutes les illustrations qui ne sont pas le travail de l'auteur de ce rapport so
 
 \mainmatter
 
-\input{sections/introduction.tex}
-\input{sections/context.tex}
-\input{sections/methodology.tex}
-\input{sections/results.tex}
-%\input{sections/discussion.tex}
-\input{sections/conclusion.tex}
-
-
+\input{sections/intro/introduction.tex}
+\input{sections/chap1/background.tex}
+\input{sections/chap2/methodology.tex}
+\input{sections/chap3/results.tex}
+\input{sections/chap4/discussion.tex}
+\input{sections/conclusion/conclusion.tex}
 
 % -------------------------------------------------------------------
 % Bibliography
 % -------------------------------------------------------------------
 
-\bibliographystyle{agsm} 
-\bibliography{mybibliography} 
+\sloppy
+\printbibliography
+\addcontentsline{toc}{chapter}{Bibliographie}
 \printglossary[title={Glossaire},toctitle={Glossaire}]
-
 % -------------------------------------------------------------------
 % Appendices
 % -------------------------------------------------------------------
 
 \begin{appendices}
-\input{sections/appendixA.tex}
-%\input{sections/appendixB.tex}
+\input{sections/appendix/appendixA.tex}
+\input{sections/appendix/appendixB.tex}
 \end{appendices}
-
 \end{document}

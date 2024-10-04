@@ -9,8 +9,15 @@ This version is modified on March 19, 2024 based on the version of Loïc Barraul
 - Added additional sections or content.
 - Adjusted layout and design elements for clarity and consistency.
 
-## Instructions for Compilation
-- Write on the seperate components of the report in the file "sections"
-- Launch the main.tex with the XelaTex function
-- Use BibTeX as the bibliography engine.
+## Instructions
+### Launch the main.tex with the XelaTex function or the command in the terminal in a Windows system
 
+```Bash
+.\run.bat
+```
+### Launch the main.tex with the XelaTex function or the command in the terminal in a mac/linux system
+
+```Bash
+zsh ./run.sh
+./
+```

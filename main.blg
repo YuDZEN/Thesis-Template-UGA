@@ -1,46 +1,23 @@
-This is BibTeX, Version 0.99d (TeX Live 2023)
-Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
-The top-level auxiliary file: main.aux
-The style file: agsm.bst
-Database file #1: mybibliography.bib
-You've used 3 entries,
-            2909 wiz_defined-function locations,
-            664 strings with 5279 characters,
-and the built_in function-call counts, 14503 in all, are:
-= -- 2373
-> -- 187
-< -- 0
-+ -- 1135
-- -- 56
-* -- 1286
-:= -- 2877
-add.period$ -- 3
-call.type$ -- 3
-change.case$ -- 42
-chr.to.int$ -- 3
-cite$ -- 3
-duplicate$ -- 48
-empty$ -- 110
-format.name$ -- 68
-if$ -- 2604
-int.to.chr$ -- 5
-int.to.str$ -- 0
-missing$ -- 3
-newline$ -- 15
-num.names$ -- 32
-pop$ -- 7
-preamble$ -- 1
-purify$ -- 45
-quote$ -- 0
-skip$ -- 39
-stack$ -- 0
-substring$ -- 3381
-swap$ -- 9
-text.length$ -- 42
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 12
-warning$ -- 0
-while$ -- 69
-width$ -- 0
-write$ -- 45
+[0] Config.pm:308> INFO - This is Biber 2.20
+[1] Config.pm:311> INFO - Logfile is 'main.blg'
+[235] biber-MSWIN64:340> INFO - === 
+[310] Biber.pm:420> INFO - Reading 'main.bcf'
+[623] Biber.pm:994> INFO - Found 3 citekeys in bib section 0
+[673] Biber.pm:4463> INFO - Processing section 0
+[698] Biber.pm:4654> INFO - Looking for bibtex file 'main.bib' for section 0
+[820] bibtex.pm:1713> INFO - LaTeX decoding ...
+[850] bibtex.pm:1519> INFO - Found BibTeX data source 'main.bib'
+[999] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1000] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1000] Biber.pm:4283> INFO - Sorting list 'apa/apasortcite//global/global/global' of type 'entry' with template 'apa' and locale 'fr-FR'
+[1000] Biber.pm:4289> INFO - No sort tailoring available for locale 'fr-FR'
+[1023] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[1024] UCollate.pm:68> INFO - Overriding locale 'fr-FR' defaults 'variable = shifted' with 'variable = non-ignorable'
+[1024] Biber.pm:4283> INFO - Sorting list 'apa/global//global/global/global' of type 'entry' with template 'apa' and locale 'fr-FR'
+[1025] Biber.pm:4289> INFO - No sort tailoring available for locale 'fr-FR'
+[1043] bbl.pm:676> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[1055] bbl.pm:779> INFO - Output to main.bbl
+[1057] Biber.pm:131> WARN - legacy month field 'December' in entry 'Reference1' is not an integer - this will probably not sort properly.
+[1058] Biber.pm:131> WARN - legacy month field 'January' in entry 'Reference2' is not an integer - this will probably not sort properly.
+[1059] Biber.pm:131> WARN - legacy month field 'March' in entry 'Reference3' is not an integer - this will probably not sort properly.
+[1060] Biber.pm:133> INFO - WARNINGS: 3
